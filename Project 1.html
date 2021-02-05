@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Conan the Barbarian </title>
+<style>
+body {
+  background:linear-gradient(#42240c, black);
+    margin: 0 auto;
+    align-content: center;
+    }
+     h1 {
+         color: #f64b3c;
+        text-align: center;
+         font-family: "Luminari";
+         font-size: 25px;
+     }  
+     h2 {
+         text-align: center;
+         font-size: 50px;
+         text-shadow: 0px 0 50px #fdba9a;
+         margin: 0 auto;
+     }
+    h3 {
+        text-align: center;
+         color: #f64b3c;
+         padding: 10px 20px 20px;
+         margin: 0 auto;
+         font-family: "crom";
+         font-size: 60px;
+         text-shadow:0px 0 20px black;
+    }
+
+     img{
+         display: block;
+         margin: 0 auto;
+         border-radius: 5px;
+         padding: 0px;
+         box-shadow: 0px 0 90px #fdba9a;
+     }
+
+     p {
+         line-height: 1.5;
+         font-size: 15px;
+         font-family: "Avenir";
+         word-spacing: 5px;
+         font-weight:bolder;
+         margin: 50px;
+         color: #fdba9a;
+         text-align: center;
+     }
+     hr{
+         color:black;
+         margin: 40px auto;
+     }
+
+     a {
+         font-family:"crom";
+         text-align: center;
+     }
+
+ button {
+            display: block;
+            margin: 20px auto;
+            background:rgb(105, 71,2);  
+            color:#fdba9a;
+            font-size: 20px;
+            padding: 20px 30px;
+            border-radius: 40px;
+            transition: all 300ms ease-in-out;
+            font-family: "crom";
+            border: transparent;
+        }
+
+     .learnMore {
+         display: block;
+         margin-top: 5px;
+         text-decoration:none;
+         margin: 0 auto;
+         color:#fdba9a;
+         font-size:18px;
+         transition: all 200ms ease-in-out;
+     }
+
+     .learnMore:hover {
+         text-decoration: underline;
+         font-size: 18px;
+         color: #f64b3c;
+
+     }
+     button:hover{
+        cursor: pointer;
+        color:#f64b3c;
+        font-size:21px;
+        text-decoration:underline;
+        background:#fdba9a;
+     }
+
+     .footer {
+        margin: 0 auto;
+        display: block;
+        text-align:center;
+        font-size:10px;
+        color:black;
+        font:"Avenir";
+     }
+
+     .container {
+         margin: 0 auto;
+         padding: 15px 40px;
+     }
+    
+    </style>
+</head>
+
+<body>
+    <div class ="container">
+    <h1>
+        <em>
+            Slave... Barbarian... Warrior... Thief...
+        </em>
+    </h1>
+    <h2>
+    ⚔️🔥💪⛓
+    </h2>
+    <h3> 
+        <strong>
+            CONAN THE BARBARIAN
+        </strong>
+        
+    </h3>
+    <img src="https://media.giphy.com/media/nkbHJf196TV7y/giphy.gif" alt="Conan Conan_movie_poster" width="400" 
+    />
+    <p>
+        Conan the Barbarian is a 1982 American epic sword and sorcery film directed by John Milius and written by Milius and Oliver Stone. It is based on the character created by Robert E. Howard. The film stars Arnold Schwarzenegger and James Earl Jones, and tells the story of a young muscular barbarian warrior named Conan (Schwarzenegger), who seeks vengeance for the death of his parents at the hands of Thulsa Doom (Jones), the leader of a snake cult.
+    </p>
+    <hr>
+    <br />
+    
+    <a href="https://en.wikipedia.org/wiki/Conan_the_Barbarian_(1982_film)"
+    target=blank class=learnMore>
+    Learn more on Wikipedia
+    </a>
+<button class="buyButton">
+    Recieve a special copy of Conan on VCR!
+</button>
+<br />
+
+<p class=footer>
+    This page was built by Emily    
+</p>
+    
+</div>
+
+<script>
+    function buy() {
+        let name = prompt("What is your name?")
+        let VCR = prompt("Do you have a VCR player?")
+        .toLowerCase()
+        .trim();
+
+        if (VCR ==="yes") {
+            alert(
+        "💪🔥  Thank you, " +
+        name + 
+        "! We'll be in touch with your special copy of Conan the Barbarian on VHS! In the meantime, enjoy more of Arnie's movies!  🔥💪")
+        } else {
+            alert(
+        "💪🔥  Thank you, " +
+        name + 
+        ". We will NOT be in touch with your special copy of Conan the Barbarian on VHS! In the meantime, get a VHS player and enjoy more of Arnie's movies!! 🔥💪");
+        }
+    }
+    let buyButton = document.querySelector(".buyButton");
+    buyButton.addEventListener("click", buy);
+</script>
+</body>
+</html>
